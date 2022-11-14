@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --blue:#26619c;
+    --green: #8fce00;
+    --red:#740909;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .2s;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.header {
+    padding: 2rem 7%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+}
+
+#logo {
+    font-size: 2.5rem;
+    color: var(--red);
+}
+
+#logo span {
+    color: var(--blue);
+}
+
+.icons #menu-bars {
+    color: var(--blue);
+    font-size: 2rem;
+}
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: var(--blue);
+}
+
+.navbar a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.background-image {
+    background: url('wu-yi.jpg');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-text-background {
+    text-align: center;
+    padding: 2rem 7%;
+    width: 100%;
+}
+
+.inner-text-background h2 {
+    color: var(--red);
+    font-size: 100px;
+}
+
+.inner-text-background h1 {
+    color: var(--blue);
+    font-size: 150px;
+}
+
+.inner-text-background h3 {
+    color: var(--red);
+    font-size: 100px;
+}
+
+.what-we-do {
+    padding: 5rem 7%;
+    background: var(--blue);
+}
+
+.main-we-do {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.inner-we-do {
+    flex: 1 1 45rem;
+}
+
+.inner-we-do h1 {
+    color: var(--red);
+    font-size: 40px;
+}
+
+.inner-we-do p {
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    margin-bottom: 25px;
+}
+
+.inner-we-do a {
+    padding: 2rem 4rem;
+    background: var(--red);
+    color: var(--green);
+    font-size: 1.5rem;
+    border-radius: 15px;
+}
+
+.our-services {
+    padding: 3rem 7%;
+}
+
+.our-services h1 {
+    color: var(--red);
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+.our-services h1 span {
+    color: var(--blue);
+}
+
+.main-services {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.inner-services {
+    flex: 1 1 300px;
+    padding: 2rem 3rem;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.inner-services .service-icons {
+    width: 50px;
+    height: 50px;
+    background: var(--red);
+    line-height: 50px;
+    text-align: center;
+    border-radius: 100%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.inner-services .service-icons i {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.inner-services p {
+    padding: 0 2rem;
+    font-size: 1.2rem;
+}
+
+.gallery {
+    padding: 3rem 7%;
+}
+
+.gallery h1 {
+    font-size: 40px;
+    text-align: center;
+    color: var(--red);
+    margin-bottom: 25px;
+}
+
+.gallery h1 span {
+    color: var(--blue);
+}
+
+.main-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.inner-gallery {
+    flex: 1 1 300px;
+    margin-top: 15px;
+}
+
+.inner-gallery img {
+    width: 100%;
+}
+
+.our-prices {
+    padding: 4rem 7%;
+}
+
+.our-prices h1 {
+    color: var(--red);
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.our-prices h1 span {
+    color: var(--blue);
+}
+
+.main-prices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.inner-prices {
+    flex-basis: 40%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 3rem 2rem;
+}
+
+.price-heading {
+    padding: 3rem;
+    background: var(--red);
+    text-align: center;
+}
+.price-heading h2 {
+    color: white;
+    font-size: 2rem;
+}
+
+.price-heading p {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.price-text p {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color: var(--red);
+}
+
+.inner-prices .inner-price-heading h2 {
+    color: var(--red);
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.inner-prices .inner-price-heading h2 span {
+    font-size: 4rem;
+}
+
+.inner-prices a {
+    padding: 2rem 4rem;
+    font-size: 1.5rem;
+    color: white;
+    background: var(--red);
+    border-radius: 15px;
+}
+
+.our-brands {
+    padding: 3rem 7%;
+}
+
+.our-brands h1 {
+    color: var(--red);
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.our-brands h1 span {
+    color: var(--blue);
+}
+
+.main-brands {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.inner-brands {
+    flex-basis: 20%;
+    text-align: center;
+}
+
+.inner-brands img {
+    width: 50%;
+}
+
+.get-in-touch {
+    padding: 4rem 7%;
+    background: var(--red);
+}
+
+.get-in-touch h1 {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.main-touch p {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+@media (max-width:768px) {
+    html {
+        font-size: 55%;
+    }
+    .inner-prices {
+        flex-basis: 100%;
+    }
+}
+
